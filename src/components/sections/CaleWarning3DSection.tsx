@@ -49,10 +49,10 @@ export default function CaleWarning3DSection() {
                         <div className="text-xl font-medium bg-white/40 p-6 rounded-xl border-2 border-black/10 backdrop-blur-sm">
                             <ul className="flex flex-col gap-3">
                                 <li className="flex items-center gap-3">
-                                    <span className="w-2 h-2 bg-black rounded-full" /> Costo aproximado: <strong>$114.000 COP</strong>
+                                    <span className="w-2 h-2 bg-black rounded-full" /> Costo aproximado: <strong>$534.000 COP</strong>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <span className="w-2 h-2 bg-black rounded-full" /> Incluye segunda oportunidad
+                                    <span className="w-2 h-2 bg-black rounded-full" /> Incluye examen teorico, examen practico y segunda oportunidad para presentarlo
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="w-2 h-2 bg-black rounded-full" /> Aplicado por la UNAD
@@ -106,7 +106,7 @@ export default function CaleWarning3DSection() {
                                 style={{ transform: "translateZ(50px)" }}
                                 className="absolute bottom-8 left-8 right-8 bg-brand-yellow text-black p-4 rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] z-20 font-bold flex items-center justify-center gap-3 backdrop-blur-md"
                             >
-                                <span className="text-3xl">⚠️</span>
+                                <span className="text-6xl">💯</span>
                                 <div>
                                     <p className="text-sm uppercase tracking-wider text-black/70">Certificación</p>
                                     <p className="text-base leading-tight">Acompañamiento<br />en el proceso</p>

@@ -7,34 +7,34 @@ import Image from "next/image";
 export default function LocationsSection() {
     const locations = [
         {
-            name: "Sede Centro Pereira",
-            address: "Calle 19 # 6-48",
-            phone: "312 000 0000",
-            image: "/images/v2_updates/FMPH0001.png"
+            name: "Sede Principal Centro Pereira",
+            address: "Calle 22 # 4-07",
+            phone: "314 584 7468",
+            image: "/images/sedeuno.jpg"
         },
         {
-            name: "Sede Principal Dosquebradas (Academia)",
-            address: "Av. Simón Bolívar # 45-67",
-            phone: "311 000 0000",
-            image: "/images/v2_updates/FMPH0002.png"
+            name: "Sede Dosquebradas (Academia)",
+            address: "Calle 38 No. 15-14 Piso 2 BARRIO GUADALUPE DOSQUEBRADAS",
+            phone: "314 288 3955",
+            image: "/images/sededos.jpg"
         },
         {
             name: "Sede Dosquebradas (CRC)",
-            address: "Sector La Romelia",
-            phone: "313 000 0000",
-            image: "/images/v2_updates/FMPH0003.png"
+            address: "Carrera 15 Bis No. 38-20 BARRIO GUADALUPE DOSQUEBRADAS",
+            phone: "3104163541",
+            image: "/images/sedetres.jpg"
         },
         {
             name: "Sede Honda Tolima",
-            address: "Centro Honda",
-            phone: "314 000 0000",
-            image: "/images/v2_updates/FMPH0006.png"
+            address: "Calle 13 No.13-18 Local 1, Barrio Paloquemao",
+            phone: "311 655 2234",
+            image: "/images/sedecuatro.jpeg"
         },
         {
             name: "Sede Mariquita",
             address: "Centro Mariquita",
             phone: "315 000 0000",
-            image: "/images/v2_updates/FMPH0010.png"
+            image: "/images/sedecinco.jpg"
         },
     ];
 

@@ -5,12 +5,12 @@ import { UserPlus, CreditCard, FileText, Stethoscope, Building2, Car } from "luc
 
 export default function ProcessTimelineAnimated() {
     const steps = [
-        { id: 1, title: "Inscripción RUNT", icon: <UserPlus size={24} /> },
-        { id: 2, title: "Pago de derechos", icon: <CreditCard size={24} /> },
-        { id: 3, title: "Formularios", icon: <FileText size={24} /> },
-        { id: 4, title: "Exámenes médicos", icon: <Stethoscope size={24} /> },
-        { id: 5, title: "Registro academia", icon: <Building2 size={24} /> },
-        { id: 6, title: "Inicio de clases", icon: <Car size={24} />, extra: "Nota: Para moto son 15 clases obligatorias." },
+        { id: 1, title: "Inscripción RUNT", icon: <UserPlus size={24} />, extra: "Nota: te ayudamos con la inscripcion en el RUNT."  },
+        { id: 2, title: "Exámenes médicos", icon: <Stethoscope size={24} /> },
+        { id: 3, title: "Registro academia", icon: <CreditCard size={24} /> },
+        { id: 4, title: "Formularios", icon: <FileText size={24} /> },
+        { id: 5, title: "Inicio de clases teoricas", icon: <Building2 size={24} />},
+        { id: 6, title: "Inicio de clases practicas", icon: <Car size={24} /> },
     ];
 
     return (

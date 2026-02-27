@@ -94,8 +94,8 @@ export default function ContactFormSection() {
                         </p>
                         <div className="bg-brand-green/5 p-6 rounded-2xl border border-brand-green/10">
                             <h3 className="font-bold text-gray-900 mb-2">Canales Directos</h3>
-                            <p className="text-gray-600 mb-1">📞 Teléfono: +57 300 000 0000</p>
-                            <p className="text-gray-600">✉️ Email: info@conduser.com</p>
+                            <p className="text-gray-600 mb-1">📞 Teléfono: +57 310 416 3541</p>
+                            <p className="text-gray-600">✉️ Email: conduser.pereira@gmail.com</p>
                         </div>
                     </div>
 
@@ -131,6 +131,17 @@ export default function ContactFormSection() {
                                 placeholder="Ej. 3000000000"
                             />
                             {errors.telefono && <span className="text-red-500 text-xs mt-1 block">{errors.telefono.message}</span>}
+                        </div>
+
+                        <div>
+                            <label className="block text-sm font-bold text-gray-700 mb-1">Correo Electronico *</label>
+                            <input
+                                type="email"
+                                {...register("correo")}
+                                className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all"
+                                placeholder="Ej. juanperez@ejemplo.com"
+                            />
+                            {errors.nombre && <span className="text-red-500 text-xs mt-1 block">{errors.nombre.message}</span>}
                         </div>
 
                         <div className="grid grid-cols-2 gap-4">

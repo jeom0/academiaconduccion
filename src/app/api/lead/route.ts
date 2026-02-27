@@ -1,17 +1,47 @@
 import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-    try {
-        const body = await req.json();
+  try {
+    const body = await req.json();
 
-        // Aquí iría la lógica para guardar en base de datos o enviar a CRM
-        // Ejemplo: conectar con n8n, Salesforce, Hubspot, etc.
+    const {
+      nombre,
+      telefono,
+      servicio,
+      sede,
+      mensaje
+    } = body;
 
-        console.log('Lead recibido:', body);
+    await resend.emails.send({
+      from: 'Leads Conduser <onboarding@resend.dev>', 
+      to: process.env.LEADS_TO_EMAIL as string,
+      subject: `Nuevo Lead - ${servicio}`,
+      html: `
+        <h2>Nuevo Lead recibido</h2>
+        <p><strong>Nombre:</strong> ${nombre}</p>
+        <p><strong>Teléfono:</strong> ${telefono}</p>
+        <p><strong>Servicio:</strong> ${servicio}</p>
+        <p><strong>Sede:</strong> ${sede}</p>
+        <p><strong>Mensaje:</strong> ${mensaje || 'No dejó mensaje'}</p>
+        <hr/>
+        <small>Enviado desde la web CONDUSER</small>
+      `,
+    });
 
-        return NextResponse.json({ success: true, message: 'Lead registrado exitosamente' }, { status: 200 });
-    } catch (error) {
-        console.error('Error processando lead:', error);
-        return NextResponse.json({ success: false, message: 'Fallo al procesar solicitud' }, { status: 500 });
-    }
+    return NextResponse.json(
+      { success: true, message: 'Lead enviado por correo correctamente' },
+      { status: 200 }
+    );
+
+  } catch (error) {
+    console.error('Error enviando correo:', error);
+
+    return NextResponse.json(
+      { success: false, message: 'Fallo al enviar el correo' },
+      { status: 500 }
+    );
+  }
 }

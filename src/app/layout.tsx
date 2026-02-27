@@ -6,9 +6,14 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Academia de Conducción en Dosquebradas | CONDUSER',
+  title: 'Academia de Conducción | CONDUSER',
   description: 'Saca tu licencia con acompañamiento completo y preparación para el examen CALE. Refrendación, recategorización C1 C2 C3 y más.',
   keywords: 'academia conducción dosquebradas, examen cale, refrendación licencia, recategorización c1 c2 c3',
+  icons: {
+    icon: '/favicon.ico?v=1',
+    shortcut: '/favicon.ico?v=1',
+    apple: '/favicon.ico?v=1',
+  },
 }
 
 const GTM_ID = 'GTM-XXXXXXX'

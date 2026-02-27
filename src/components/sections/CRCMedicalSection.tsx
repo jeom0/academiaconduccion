@@ -7,8 +7,8 @@ export default function CRCMedicalSection() {
     const exams = [
         { title: "Optometría", icon: <Eye size={36} />, desc: "Evaluación de agudeza visual y visión periférica." },
         { title: "Psicología", icon: <BrainCircuit size={36} />, desc: "Pruebas de coordinación motriz y tiempos de reacción." },
+        { title: "Fonoaudiología", icon: <Ear size={36} />, desc: "Examen de capacidad auditiva para conducción segura."},
         { title: "Medicina General", icon: <Activity size={36} />, desc: "Valoración física integral y antecedentes médicos." },
-        { title: "Fonoaudiología", icon: <Ear size={36} />, desc: "Examen de capacidad auditiva para conducción segura." },
     ];
 
     return (
@@ -25,9 +25,9 @@ export default function CRCMedicalSection() {
                         transition={{ duration: 0.8 }}
                         className="lg:w-1/3"
                     >
-                        <div className="w-24 h-24 bg-gray-100 rounded-3xl flex items-center justify-center mb-8 border border-gray-200 shadow-inner">
-                            <span className="font-black text-3xl text-brand-green">CRC</span>
-                        </div>
+                        <div>
+                            <img src="/images/logocrc.png" width={250} height={200} alt="logo crc"/>
+                        </div> 
                         <h2 className="text-4xl font-bold mb-6 text-gray-900">Exámenes Médicos Certificados</h2>
                         <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                             Realiza tus exámenes médicos en nuestro Centro de Reconocimiento de Conductores (CRC) aliado. Contamos con profesionales certificados para garantizar un proceso ágil y seguro.

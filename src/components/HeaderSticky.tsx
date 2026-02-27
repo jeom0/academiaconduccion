@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
+
 export default function HeaderSticky() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,20 +33,21 @@ export default function HeaderSticky() {
             animate={{ y: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                ? "bg-white/90 backdrop-blur-md shadow-elegant py-3"
-                : "bg-transparent py-5"
+                ? "bg-white/90 backdrop-blur-md shadow-elegant py-2"
+                : "bg-white/90 py-2"
                 }`}
         >
             <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 rounded-xl bg-brand-green flex items-center justify-center text-white font-bold text-xl">
-                        C
-                    </div>
-                    <span className={`font-bold text-2xl tracking-tight transition-colors ${isScrolled ? 'text-brand-green' : 'text-brand-green'}`}>
-                        CONDUSER
-                    </span>
-                </div>
+    <div className="flex items-center">
+        <a href="/">
+            <img
+                src="/images/logo.png"
+                alt="Conduser Logo"
+                className="h-14 w-auto object-contain"
+            />
+        </a>
+    </div>
 
                 {/* Desktop Nav */}
                 <nav className="hidden lg:flex items-center gap-8">
@@ -56,8 +58,8 @@ export default function HeaderSticky() {
                             // Text is white at the top (over dark hero) and gray when sticky.
                             // Hover makes it the brand yellow at top, brand green otherwise.
                             className={`font-medium transition-colors ${isScrolled
-                                    ? "text-gray-600 hover:text-brand-green"
-                                    : "text-white/90 hover:text-brand-yellow"
+                                ? "text-gray-600 hover:text-brand-green"
+                                : "text-gray-600 hover:text-brand-yellow"
                                 }`}
                         >
                             {link.name}
@@ -68,7 +70,7 @@ export default function HeaderSticky() {
                 {/* Desktop Buttons */}
                 <div className="hidden lg:flex items-center gap-4">
                     <a
-                        href="https://wa.me/573000000000?text=Hola%20quiero%20iniciar%20mi%20proceso"
+                        href="https://wa.me/573104163541?text=Hola%20quiero%20iniciar%20mi%20proceso"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => {
@@ -77,8 +79,8 @@ export default function HeaderSticky() {
                             }
                         }}
                         className={`font-medium transition-all px-5 py-2.5 rounded-full flex items-center gap-2 ${isScrolled
-                                ? "bg-green-100 text-brand-green hover:bg-brand-green hover:text-white"
-                                : "bg-brand-green text-white hover:bg-white hover:text-brand-green shadow-[0_0_15px_rgba(31,175,90,0.5)]"
+                            ? "bg-green-100 text-brand-green hover:bg-brand-green hover:text-white"
+                            : "bg-brand-green text-white hover:bg-white hover:text-brand-green shadow-[0_0_15px_rgba(31,175,90,0.5)]"
                             }`}
                     >
                         <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
