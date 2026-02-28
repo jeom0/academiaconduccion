@@ -95,7 +95,7 @@ export default function CaleWarning3DSection() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
 
                             <Image
-                                src="/images/v2_updates/FMPH0037.png"
+                                src="/images/FMPH0037.jpg"
                                 alt="Ilustración o renderizado 3D de preparación para examen CALE"
                                 fill
                                 className="object-cover transition-transform duration-700 hover:scale-110"
@@ -156,7 +156,7 @@ export default function CaleWarning3DSection() {
                                     La <strong>Universidad Nacional Abierta y a Distancia (UNAD)</strong> ha sido designada por el Ministerio de Transporte para operar los Centros de Apoyo Logístico de Evaluación (CALE) durante los próximos 20 años.
                                 </p>
                                 <p>
-                                    Este nuevo modelo de <strong>"cero atajos"</strong> busca garantizar que solo conductores idóneos lleguen a las vías, reduciendo la siniestralidad con tecnología de punta y evaluación automatizada.
+                                    Este nuevo modelo de <strong>&quot;cero atajos&quot;</strong> busca garantizar que solo conductores idóneos lleguen a las vías, reduciendo la siniestralidad con tecnología de punta y evaluación automatizada.
                                 </p>
 
                                 <h4 className="font-bold text-gray-900 mt-6 mb-2">Pilares del nuevo sistema:</h4>

@@ -11,6 +11,7 @@ import { Send, Loader2 } from "lucide-react";
 const formSchema = z.object({
     nombre: z.string().min(2, "Mínimo 2 caracteres"),
     telefono: z.string().min(7, "Teléfono inválido"),
+    correo: z.string().email("Correo inválido"),
     servicio: z.string().min(1, "Selecciona un servicio"),
     sede: z.string().min(1, "Selecciona una sede"),
     mensaje: z.string().optional(),
@@ -141,7 +142,7 @@ export default function ContactFormSection() {
                                 className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all"
                                 placeholder="Ej. juanperez@ejemplo.com"
                             />
-                            {errors.nombre && <span className="text-red-500 text-xs mt-1 block">{errors.nombre.message}</span>}
+                            {errors.correo && <span className="text-red-500 text-xs mt-1 block">{errors.correo.message}</span>}
                         </div>
 
                         <div className="grid grid-cols-2 gap-4">

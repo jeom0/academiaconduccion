@@ -40,7 +40,7 @@ export default function Services3DGrid() {
             title: "Todo tipo de tramite y Asesorias",
             desc: "Asesorías personalizadas para resolver tus dudas y acompañamiento en todo el proceso.",
             icon: <Files size={32} className="text-brand-green" />,
-            image: "/images/v2_updates/FMPH0027.png",
+            image: "/images/v2_updates/FMPH0027.jpg",
         },
     ];
 
