@@ -101,8 +101,8 @@ export default function CRCMedicalSection() {
                     Nuestro Equipo Médico
                 </h3>
 
-                {/* 🔥 quitamos overflow-hidden para que no corte sombra */}
-                <div className="relative w-full h-[420px] flex items-center justify-center overflow-x-hidden">
+                {/* 🔥 quitamos overflow-x-hidden para que no corte sombra, el padre ya tiene overflow-hidden */}
+                <div className="relative w-full h-[450px] flex items-center justify-center">
 
                     {doctors.map((doctor, i) => {
                         const normalizedIndex = index % doctors.length;

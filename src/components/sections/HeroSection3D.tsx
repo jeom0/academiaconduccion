@@ -53,21 +53,21 @@ export default function HeroSection3D() {
 
             {/* ===== CONTENIDO ===== */}
 
-            <div className="container mx-auto px-4 z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div className="container mx-auto px-4 z-10 grid xl:grid-cols-2 gap-12 items-center">
 
                 {/* TEXTO */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-white"
+                    className="text-white text-center xl:text-left flex flex-col items-center xl:items-start"
                 >
-                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                    <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
                         Tu Licencia de Conducción <br />
                         <span className="text-brand-yellow">Sin Complicaciones</span>
                     </h1>
 
-                    <p className="text-lg md:text-xl mb-10 text-white/90 max-w-lg">
+                    <p className="text-lg md:text-xl mb-10 text-white/90 max-w-lg mx-auto xl:mx-0">
                         Acompañamiento completo, instalaciones modernas y preparación experta para tu proceso.
                     </p>
 
