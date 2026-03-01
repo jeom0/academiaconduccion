@@ -60,7 +60,7 @@ export default function VehiclesShowcase3D() {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-[80vh] flex items-center py-20 overflow-hidden bg-gradient-to-br from-[#0f4d28] via-[#10592e] to-brand-green"
+            className="relative lg:min-h-[80vh] min-h-auto flex items-center py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-[#0f4d28] via-[#10592e] to-brand-green"
             style={{ perspective: "1000px" }}
         >
             {/* Parallax Background Grid */}
@@ -71,18 +71,18 @@ export default function VehiclesShowcase3D() {
                     backgroundImage:
                         "linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px)",
                     backgroundSize: "40px 40px",
-                    transform: "rotateX(60deg) scale(2)",
+                    transform: "rotateX(60deg) scale(1.5)", // Reduced scale for mobile
                     transformOrigin: "top",
                 }}
             />
 
             <div className="container mx-auto px-4 z-10">
-                <div className="text-center mb-16">
+                <div className="text-center mb-12 lg:mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg"
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white drop-shadow-lg"
                     >
                         Flota de <span className="text-brand-yellow">Último Modelo</span>
                     </motion.h2>
@@ -91,15 +91,17 @@ export default function VehiclesShowcase3D() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-white/80 text-xl max-w-2xl mx-auto"
+                        className="text-white/80 text-lg lg:text-xl max-w-2xl mx-auto"
                     >
                         Aprende a conducir en vehículos modernos, cómodos y seguros para una experiencia de aprendizaje superior.
                     </motion.p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto mt-8 lg:mt-12">
                     {vehicles.map((vehicle, i) => (
-                        <FlipCard key={i} vehicle={vehicle} priority={i === 0} />
+                        <div key={i} className={i === 2 ? "md:col-span-2 lg:col-span-1" : ""}>
+                            <FlipCard vehicle={vehicle} priority={i === 0} />
+                        </div>
                     ))}
                 </div>
             </div>
@@ -130,7 +132,7 @@ function FlipCard({
     return (
         // ✅ Contenedor estable: aquí vive el hover, NO se rota
         <motion.div
-            className="relative w-full aspect-[4/5]"
+            className="relative w-full aspect-[3/4] lg:aspect-[4/5]"
             style={{ perspective: "1200px" }}
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}

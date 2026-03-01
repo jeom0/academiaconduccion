@@ -62,15 +62,15 @@ export default function Footer() {
                     <ul className="flex flex-col gap-4 text-white/80">
                         <li className="flex items-start gap-3">
                             <Phone size={20} className="mt-0.5 shrink-0" />
-                            <span>+57 300 000 0000</span>
+                            <span>+57 310 416 3541</span>
                         </li>
                         <li className="flex items-start gap-3">
                             <Mail size={20} className="mt-0.5 shrink-0" />
-                            <span>contacto@conduser.com</span>
+                            <span>conduser.pereira@gmail.com</span>
                         </li>
                         <li className="flex items-start gap-3">
                             <MapPin size={20} className="mt-0.5 shrink-0" />
-                            <span>Av. Principal #12-34<br />Dosquebradas, Risaralda</span>
+                            <span>Calle 38 No. 15-14 Piso 2 BARRIO GUADALUPE DOSQUEBRADAS<br />Dosquebradas, Risaralda</span>
                         </li>
                     </ul>
                 </div>

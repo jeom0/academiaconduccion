@@ -21,7 +21,7 @@ export default function Testimonials3D() {
                 </div>
 
                 {/* CSS Carousel / Slider container */}
-                <div className="flex w-full overflow-hidden py-10 perspective-1000 -mx-4 px-4 sm:mx-0 sm:px-0">
+                <div className="flex w-full overflow-hidden py-10 perspective-1000">
                     <motion.div
                         animate={{ x: [0, -2000] }}
                         transition={{ repeat: Infinity, duration: 40, ease: "linear" }}

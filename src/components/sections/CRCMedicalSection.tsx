@@ -35,7 +35,7 @@ export default function CRCMedicalSection() {
     }, [doctors.length]);
 
     return (
-        <section id="medico" className="py-24 bg-white border-b border-gray-100">
+        <section id="medico" className="py-24 bg-white border-b border-gray-100 overflow-hidden">
 
             {/* ===================== */}
             {/* CONTENIDO SUPERIOR   */}
@@ -102,7 +102,7 @@ export default function CRCMedicalSection() {
                 </h3>
 
                 {/* 🔥 quitamos overflow-hidden para que no corte sombra */}
-                <div className="relative w-full h-[420px] flex items-center justify-center">
+                <div className="relative w-full h-[420px] flex items-center justify-center overflow-x-hidden">
 
                     {doctors.map((doctor, i) => {
                         const normalizedIndex = index % doctors.length;

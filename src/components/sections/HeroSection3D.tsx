@@ -29,7 +29,7 @@ export default function HeroSection3D() {
     }, [images.length]);
 
     return (
-        <section className="relative min-h-screen bg-brand-green flex items-center justify-center overflow-hidden pt-20">
+        <section className="relative lg:min-h-screen min-h-[85vh] bg-brand-green flex items-center justify-center overflow-hidden pt-24 lg:pt-20">
 
             {/* ===== FLOATING ELEMENTS ===== */}
 
@@ -37,18 +37,18 @@ export default function HeroSection3D() {
                 animate={{ y: [0, -20, 0], rotate: [0, 10, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
                 style={{ y: y1 }}
-                className="absolute left-4 lg:left-10 top-1/4 w-24 h-24 opacity-80 z-0"
+                className="absolute left-4 lg:left-10 top-1/4 w-16 h-16 lg:w-24 lg:h-24 opacity-80 z-0 hidden sm:block"
             >
-                <div className="w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-b-[60px] border-b-orange-500 drop-shadow-2xl"></div>
+                <div className="w-0 h-0 border-l-[20px] lg:border-l-[30px] border-l-transparent border-r-[20px] lg:border-r-[30px] border-r-transparent border-b-[40px] lg:border-b-[60px] border-b-orange-500 drop-shadow-2xl"></div>
             </motion.div>
 
             <motion.div
                 animate={{ rotate: [0, 10, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
                 style={{ y: y2 }}
-                className="absolute right-4 lg:right-20 top-1/3 w-20 h-20 bg-brand-yellow rounded-full border-4 border-white flex items-center justify-center opacity-80 z-0"
+                className="absolute right-4 lg:right-20 top-1/3 w-16 h-16 lg:w-20 lg:h-20 bg-brand-yellow rounded-full border-4 border-white flex items-center justify-center opacity-80 z-0 hidden md:flex"
             >
-                <span className="text-brand-green font-bold text-xl">60</span>
+                <span className="text-brand-green font-bold text-lg lg:text-xl">60</span>
             </motion.div>
 
             {/* ===== CONTENIDO ===== */}
@@ -103,7 +103,7 @@ export default function HeroSection3D() {
                     <motion.div
                         whileHover={{ rotateY: -10, rotateX: 5 }}
                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                        className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 transform-style-3d"
+                        className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 transform-style-3d"
                     >
 
                         <AnimatePresence>
