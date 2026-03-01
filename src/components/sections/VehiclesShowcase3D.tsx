@@ -132,10 +132,11 @@ function FlipCard({
     return (
         // ✅ Contenedor estable: aquí vive el hover, NO se rota
         <motion.div
-            className="relative w-full aspect-[3/4] lg:aspect-[4/5]"
+            className="relative w-full aspect-[3/4] lg:aspect-[4/5] cursor-pointer"
             style={{ perspective: "1200px" }}
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}
+            onClick={() => setIsHovered(!isHovered)}
             whileHover={{ y: -10, scale: 1.02 }}
             transition={{ type: "spring", stiffness: 220, damping: 20 }}
         >
@@ -198,7 +199,7 @@ function FlipCard({
                         <p className="text-white/80 text-sm mt-2">{vehicle.desc}</p>
 
                         <p className="text-white/70 text-sm mt-3">
-                            Pasa el mouse para ver el plan
+                            Toca o pasa el mouse para ver el plan
                         </p>
                     </div>
                 </div>
