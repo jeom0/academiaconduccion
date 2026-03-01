@@ -136,8 +136,9 @@ function FlipCard({
             style={{ perspective: "1200px" }}
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}
-            onClick={() => setIsHovered(!isHovered)}
+            onTap={() => setIsHovered(!isHovered)}
             whileHover={{ y: -10, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 220, damping: 20 }}
         >
             {/* ✅ Elemento que rota: se anima por estado, así no “parpadea” */}
