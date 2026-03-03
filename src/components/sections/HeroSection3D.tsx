@@ -48,7 +48,7 @@ export default function HeroSection3D() {
                 style={{ y: y2 }}
                 className="absolute right-4 lg:right-20 top-1/3 w-16 h-16 lg:w-20 lg:h-20 bg-brand-yellow rounded-full border-4 border-white flex items-center justify-center opacity-80 z-0 hidden md:flex"
             >
-                <span className="text-brand-green font-bold text-lg lg:text-xl">60</span>
+                <span className="text-brand-green font-bold text-lg lg:text-xl"></span>
             </motion.div>
 
             {/* ===== CONTENIDO ===== */}

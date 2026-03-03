@@ -7,13 +7,13 @@ import Image from "next/image";
 export default function LocationsSection() {
     const locations = [
         {
-            name: "Sede Principal Centro Pereira",
+            name: "Sede Centro Pereira (Academia)",
             address: "Calle 22 # 4-07",
             phone: "314 584 7468",
             image: "/images/sedeuno.jpg"
         },
         {
-            name: "Sede Dosquebradas (Academia)",
+            name: "Sede principal Dosquebradas (Academia)",
             address: "Calle 38 No. 15-14 Piso 2 BARRIO GUADALUPE DOSQUEBRADAS",
             phone: "314 288 3955",
             image: "/images/sededos.jpg"
@@ -21,7 +21,7 @@ export default function LocationsSection() {
         {
             name: "Sede Dosquebradas (CRC)",
             address: "Carrera 15 Bis No. 38-20 BARRIO GUADALUPE DOSQUEBRADAS",
-            phone: "3104163541",
+            phone: "310 416 3541",
             image: "/images/sedetres.jpg"
         },
         {
@@ -33,7 +33,7 @@ export default function LocationsSection() {
         {
             name: "Sede Mariquita",
             address: "Centro Mariquita",
-            phone: "315 000 0000",
+            phone: "311 655 2234",
             image: "/images/sedecinco.jpg"
         },
     ];
