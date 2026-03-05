@@ -27,12 +27,12 @@ export default function Footer() {
                         <a href="https://www.instagram.com/cea_conduser?igsh=MTJmOWhqd2hoNTBrZA%3D%3D&utm_source=qr" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-brand-green transition-colors">
                             <Instagram size={20} />
                         </a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-brand-green transition-colors">
+                        <a href="https://www.facebook.com/share/1CPQ38J4kh/?mibextid=wwXIfr" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-brand-green transition-colors">
                             <Facebook size={20} />
                         </a>
                         
                       <a
-  href="https://tiktok.com"
+  href="https://www.tiktok.com/@conduser?_r=1&_t=ZT-94QOIzy9EIY"
   target="_blank"
   rel="noopener noreferrer"
   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-brand-green transition-colors text-white"

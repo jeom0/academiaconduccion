@@ -171,10 +171,11 @@ export default function ContactFormSection() {
                                 >
                                     <option value="">Seleccione...</option>
                                     <option value="Dosquebradas">Dosquebradas</option>
+                                    <option value="Dosquebradas CRC">CRC Dosquebradas</option>
                                     <option value="Pereira Centro">Pereira Centro</option>
-                                    <option value="Cuba">Cuba</option>
-                                    <option value="Santa Rosa">Santa Rosa</option>
-                                    <option value="Cerritos">Cerritos</option>
+                                    <option value="Honda Tolima">Honda Tolima</option>
+                                    <option value="Mariquita">Mariquita</option>
+                                    
                                 </select>
                                 {errors.sede && <span className="text-red-500 text-xs mt-1 block">{errors.sede.message}</span>}
                             </div>
